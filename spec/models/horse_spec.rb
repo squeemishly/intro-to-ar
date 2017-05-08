@@ -8,10 +8,11 @@ RSpec.describe Horse do
 
       expect(Horse.total_winnings).to eq(7)
     end
-  end
-  it "is invalid without a name" do
-    horse = Horse.new(age: 22, total_winnings: 14)
 
-    expect(horse).to_not be_valid
+    it "is invalid without a name" do
+      horse = Horse.new(age: 22, total_winnings: 14)
+
+      expect(horse).to_not be_valid
+    end
   end
 end
